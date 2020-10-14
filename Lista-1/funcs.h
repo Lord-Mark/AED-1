@@ -5,8 +5,9 @@ void addName(char **nameList){
     int sizeList;
     //printf("nameList size: %ld\n", strlen(*nameList));
     
+    
     printf("\nDigite um nome a ser adicionado: ");
-    scanf("%s", name);
+    scanf(" %[^\n]", name);
     
     sizeList = (2+ strlen(name) + strlen(*nameList)) * sizeof(char);
 
@@ -81,7 +82,7 @@ void list(char **nameList){
     int nameID = 0; //Só pra contar os nomes
 
     for(int charID = 0; charID < strlen(*nameList); charID++){
-        if(nameList[0][charID] != ';'){            
+        if(nameList[0][charID] != ';'){
             printf("%c", nameList[0][charID]);
         }else{
             printf("\n%d - ", (nameID+1)); //+1 pois mostrará o id do nome seguinte
