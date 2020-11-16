@@ -1,4 +1,6 @@
 .vscode/
-Lista-2.zip
-Lista-3.zip
+*.zip
 Trabalho-Agenda/main
+*/main
+*/makefile
+*/README*
