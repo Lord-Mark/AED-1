@@ -1,0 +1,3 @@
+Nâo é possível ocorrer mais que uma rotação dupla em uma árvore AVL,
+pois toda vez que ocorrer um desbalanceamento na árvore, ela deve ser
+rebalanceada, ou seja, os desbalanceamentos não se acumulam
